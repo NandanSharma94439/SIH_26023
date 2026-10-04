@@ -62,6 +62,7 @@ storage/exports/
 *.db
 *.sqlite
 *.sqlite3
+!backend/storage/extraction.db
 
 # IDE & OS Files
 .vscode/
