@@ -45,6 +45,10 @@ frontend/build/
 .eslintcache
 
 # Document Ingestion, Uploads & Storage (Local Data)
+backend/storage/uploads/
+backend/storage/processed/
+backend/storage/faiss_index/
+backend/storage/exports/
 storage/uploads/
 storage/processed/
 storage/faiss_index/
