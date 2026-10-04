@@ -1,10 +1,10 @@
 services:
   # ── Backend: FastAPI / Uvicorn ───────────────────────────────────────────────
   - type: web
-    name: mining-api
+    name: geomine-api
     runtime: python
-    region: singapore        # change to your preferred region
-    plan: free               # upgrade as needed
+    region: singapore
+    plan: free
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
@@ -13,22 +13,26 @@ services:
         value: production
       - key: DEBUG
         value: "false"
+      - key: PROJECT_NAME
+        value: "Mining Document Intelligence API"
+      - key: API_VERSION
+        value: v1
       - key: API_HOST
         value: "0.0.0.0"
       - key: CORS_ORIGINS
-        sync: false          # set in Render dashboard to your frontend URL
+        sync: false   # → set to https://geomine-frontend.onrender.com in Render dashboard
       - key: GEMINI_API_KEY
-        sync: false          # set in Render dashboard
+        sync: false   # → set in Render dashboard
       - key: GEMINI_MODEL
         value: gemini-2.0-flash-lite
       - key: GEMINI_EMBEDDING_MODEL
         value: gemini-embedding-001
       - key: DATABASE_URL
-        sync: false          # set in Render dashboard (Supabase connection string)
+        sync: false   # → set in Render dashboard (Supabase connection string)
       - key: SUPABASE_URL
-        sync: false          # set in Render dashboard
+        sync: false   # → set in Render dashboard
       - key: SUPABASE_SERVICE_ROLE_KEY
-        sync: false          # set in Render dashboard
+        sync: false   # → set in Render dashboard
       - key: UPLOAD_DIRECTORY
         value: ./storage/uploads
       - key: PROCESSED_DIRECTORY
@@ -40,18 +44,18 @@ services:
 
   # ── Frontend: React / Vite → Static Site ────────────────────────────────────
   - type: web
-    name: mining-frontend
+    name: geomine-frontend
     runtime: static
-    region: singapore        # match backend region
+    region: singapore
     plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     routes:
-      # SPA fallback: serve index.html for all non-asset routes
+      # SPA fallback — serve index.html for all non-asset routes
       - type: rewrite
         source: /*
         destination: /index.html
     envVars:
       - key: VITE_API_BASE_URL
-        sync: false          # set in Render dashboard to your backend URL
+        sync: false   # → set to https://geomine-api-6jxv.onrender.com in Render dashboard
