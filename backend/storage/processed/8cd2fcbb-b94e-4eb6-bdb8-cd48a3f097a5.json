@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "id": "8cd2fcbb-b94e-4eb6-bdb8-cd48a3f097a5",
+    "filename": "Test_Dedup_Original.pdf",
+    "file_type": "pdf",
+    "mime_type": "application/pdf",
+    "file_size_bytes": 112,
+    "total_pages": 1,
+    "status": "failed",
+    "uploaded_at": "2026-09-27T03:46:48.155324Z",
+    "processing_time_ms": 11,
+    "ocr_pages_count": 0,
+    "has_tables": false,
+    "preview_text": "[Error during parsing: Failed to open file 'C:\\\\Users\\\\nanda\\\\Downloads\\\\SIH-26023\\\\backend\\\\storage\\\\uploads\\\\8cd2fcbb-b94e-4eb6-bdb8-cd48a3f097a5\\\\Test_Dedup_Original.pdf' as type pdf.]",
+    "error_message": "Parsing failed: Failed to open file 'C:\\\\Users\\\\nanda\\\\Downloads\\\\SIH-26023\\\\backend\\\\storage\\\\uploads\\\\8cd2fcbb-b94e-4eb6-bdb8-cd48a3f097a5\\\\Test_Dedup_Original.pdf' as type pdf.",
+    "content_hash": "4612f88796a5ee3169e3a555390624950a8ff5702897b3811f4ea98bc0c7bcac"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "[Error during parsing: Failed to open file 'C:\\\\Users\\\\nanda\\\\Downloads\\\\SIH-26023\\\\backend\\\\storage\\\\uploads\\\\8cd2fcbb-b94e-4eb6-bdb8-cd48a3f097a5\\\\Test_Dedup_Original.pdf' as type pdf.]",
+      "char_count": 0,
+      "word_count": 0,
+      "dimensions": {},
+      "blocks": [],
+      "tables": [],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": "Parsing failed: Failed to open file 'C:\\\\Users\\\\nanda\\\\Downloads\\\\SIH-26023\\\\backend\\\\storage\\\\uploads\\\\8cd2fcbb-b94e-4eb6-bdb8-cd48a3f097a5\\\\Test_Dedup_Original.pdf' as type pdf."
+    }
+  ]
+}

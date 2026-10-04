@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "id": "0c175255-56d6-4f55-8a68-ba3a541eeaf4",
+    "filename": "CMPDI_Geological_Report_NK.pdf",
+    "file_type": "pdf",
+    "mime_type": "application/pdf",
+    "file_size_bytes": 859,
+    "total_pages": 1,
+    "status": "processed",
+    "uploaded_at": "2026-09-27T05:22:00.875137Z",
+    "processing_time_ms": 13,
+    "ocr_pages_count": 0,
+    "has_tables": false,
+    "preview_text": "DIFFERENT CONTENT UNIQUE TO SECTION B 9999",
+    "error_message": null,
+    "content_hash": "124ad82f553626770317d76c3b808ca3a5d429518799bbf8cf0fbc7e9c256511"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "DIFFERENT CONTENT UNIQUE TO SECTION B 9999",
+      "char_count": 42,
+      "word_count": 7,
+      "dimensions": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "blocks": [
+        {
+          "block_index": 0,
+          "bbox": [
+            50.0,
+            87.1,
+            346.71,
+            103.59
+          ],
+          "text": "DIFFERENT CONTENT UNIQUE TO SECTION B 9999",
+          "block_type": "text"
+        }
+      ],
+      "tables": [],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": null
+    }
+  ]
+}

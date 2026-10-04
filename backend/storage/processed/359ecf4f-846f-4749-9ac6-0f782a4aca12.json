@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "id": "359ecf4f-846f-4749-9ac6-0f782a4aca12",
+    "filename": "Scanned_Borehole_BH204.png",
+    "file_type": "png",
+    "mime_type": "image/png",
+    "file_size_bytes": 8518,
+    "total_pages": 1,
+    "status": "processed",
+    "uploaded_at": "2026-09-26T07:44:56.296279Z",
+    "processing_time_ms": 21,
+    "ocr_pages_count": 0,
+    "has_tables": false,
+    "preview_text": "[Image Document: Tesseract OCR engine is not installed or not found on system PATH. Install Tesseract-OCR to enable image text extraction.]",
+    "error_message": null
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "[Image Document: Tesseract OCR engine is not installed or not found on system PATH. Install Tesseract-OCR to enable image text extraction.]",
+      "char_count": 0,
+      "word_count": 0,
+      "dimensions": {
+        "width": 600.0,
+        "height": 300.0
+      },
+      "blocks": [],
+      "tables": [],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": "Tesseract OCR engine is not installed or not found on system PATH. Install Tesseract-OCR to enable image text extraction."
+    }
+  ]
+}

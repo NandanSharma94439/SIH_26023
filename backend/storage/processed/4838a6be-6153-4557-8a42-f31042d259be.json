@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "id": "4838a6be-6153-4557-8a42-f31042d259be",
+    "filename": "Borehole_Logging_Data.xlsx",
+    "file_type": "xlsx",
+    "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "file_size_bytes": 5830,
+    "total_pages": 2,
+    "status": "processed",
+    "uploaded_at": "2026-09-27T04:17:18.836696Z",
+    "processing_time_ms": 17,
+    "ocr_pages_count": 0,
+    "has_tables": true,
+    "preview_text": "=== Sheet: Borehole_CM101 ===\n| Depth_From_m | Depth_To_m | Lithology | Seam_Code | Ash_Percent | GCV_kcal_kg |\n| --- | --- | --- | --- | --- | --- |\n| 0 | 18.5 | Top Soil / Weathered Alluvium | OVERBURDEN |  |  |\n| 18.5 | 64.5 | Coarse Feldspathic Sandstone | OVERBURDEN |  |  |\n| 64.5 | 66.6 | Coal",
+    "error_message": null,
+    "content_hash": "85e66f2e79f4b9840e5605a4f372be5549e06689268bb6e846a950a01b41b1cf"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "=== Sheet: Borehole_CM101 ===\n| Depth_From_m | Depth_To_m | Lithology | Seam_Code | Ash_Percent | GCV_kcal_kg |\n| --- | --- | --- | --- | --- | --- |\n| 0 | 18.5 | Top Soil / Weathered Alluvium | OVERBURDEN |  |  |\n| 18.5 | 64.5 | Coarse Feldspathic Sandstone | OVERBURDEN |  |  |\n| 64.5 | 66.6 | Coal (Bright Banded) | SEAM-VIII | 21.4 | 5450 |\n| 66.6 | 112.4 | Medium Sandstone with Shale Partings | PARTING |  |  |\n| 112.4 | 116.65 | Coal (Dull Banded) | SEAM-VII | 24.8 | 5120 |",
+      "char_count": 481,
+      "word_count": 103,
+      "dimensions": {
+        "width": 800.0,
+        "height": 1000.0
+      },
+      "blocks": [
+        {
+          "block_index": 1,
+          "bbox": [],
+          "text": "Worksheet: Borehole_CM101 (6 rows)",
+          "block_type": "table"
+        }
+      ],
+      "tables": [
+        {
+          "table_index": 1,
+          "num_rows": 6,
+          "num_cols": 6,
+          "headers": [
+            "Depth_From_m",
+            "Depth_To_m",
+            "Lithology",
+            "Seam_Code",
+            "Ash_Percent",
+            "GCV_kcal_kg"
+          ],
+          "rows": [
+            [
+              "0",
+              "18.5",
+              "Top Soil / Weathered Alluvium",
+              "OVERBURDEN",
+              "",
+              ""
+            ],
+            [
+              "18.5",
+              "64.5",
+              "Coarse Feldspathic Sandstone",
+              "OVERBURDEN",
+              "",
+              ""
+            ],
+            [
+              "64.5",
+              "66.6",
+              "Coal (Bright Banded)",
+              "SEAM-VIII",
+              "21.4",
+              "5450"
+            ],
+            [
+              "66.6",
+              "112.4",
+              "Medium Sandstone with Shale Partings",
+              "PARTING",
+              "",
+              ""
+            ],
+            [
+              "112.4",
+              "116.65",
+              "Coal (Dull Banded)",
+              "SEAM-VII",
+              "24.8",
+              "5120"
+            ]
+          ],
+          "bbox": null
+        }
+      ],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": null
+    },
+    {
+      "page_number": 2,
+      "text": "=== Sheet: Reserve_Summary ===\n| Seam | Category | Gross_Reserves_MT | Extractable_Reserves_MT |\n| --- | --- | --- | --- |\n| Seam VIII | Proved | 14.8 | 12.2 |\n| Seam VII | Proved | 28.5 | 23.9 |\n| Seam VI | Indicated | 42.1 | 33.7 |",
+      "char_count": 233,
+      "word_count": 52,
+      "dimensions": {
+        "width": 800.0,
+        "height": 1000.0
+      },
+      "blocks": [
+        {
+          "block_index": 1,
+          "bbox": [],
+          "text": "Worksheet: Reserve_Summary (4 rows)",
+          "block_type": "table"
+        }
+      ],
+      "tables": [
+        {
+          "table_index": 1,
+          "num_rows": 4,
+          "num_cols": 4,
+          "headers": [
+            "Seam",
+            "Category",
+            "Gross_Reserves_MT",
+            "Extractable_Reserves_MT"
+          ],
+          "rows": [
+            [
+              "Seam VIII",
+              "Proved",
+              "14.8",
+              "12.2"
+            ],
+            [
+              "Seam VII",
+              "Proved",
+              "28.5",
+              "23.9"
+            ],
+            [
+              "Seam VI",
+              "Indicated",
+              "42.1",
+              "33.7"
+            ]
+          ],
+          "bbox": null
+        }
+      ],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": null
+    }
+  ]
+}

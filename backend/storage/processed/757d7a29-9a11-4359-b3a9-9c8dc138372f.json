@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "id": "757d7a29-9a11-4359-b3a9-9c8dc138372f",
+    "filename": "CMPDI_Mining_Feasibility.docx",
+    "file_type": "docx",
+    "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "file_size_bytes": 35633,
+    "total_pages": 1,
+    "status": "processed",
+    "uploaded_at": "2026-09-27T05:30:28.947717Z",
+    "processing_time_ms": 26,
+    "ocr_pages_count": 0,
+    "has_tables": true,
+    "preview_text": "CMPDI Mining Feasibility Report\n\nThis feasibility study evaluates opencast strip mining at Sector-B. The stripping ratio is estimated at 1:4.2 (Coal to Overburden).\n\n\n[Table 1]:\n| Parameter | Value | Unit |\n\n| Target Annual Production | 5.0 | MTPA |\n\n| Stripping Ratio | 4.2 | cu.m/tonne |\n\n| Life of",
+    "error_message": null,
+    "content_hash": "215b34e977509f85602fc7d811b6b1b83743df811e072c0a95f316f8223ec294"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "CMPDI Mining Feasibility Report\n\nThis feasibility study evaluates opencast strip mining at Sector-B. The stripping ratio is estimated at 1:4.2 (Coal to Overburden).\n\n\n[Table 1]:\n| Parameter | Value | Unit |\n\n| Target Annual Production | 5.0 | MTPA |\n\n| Stripping Ratio | 4.2 | cu.m/tonne |\n\n| Life of Mine | 25 | Years |",
+      "char_count": 320,
+      "word_count": 58,
+      "dimensions": {
+        "width": 612.0,
+        "height": 792.0
+      },
+      "blocks": [
+        {
+          "block_index": 0,
+          "bbox": [],
+          "text": "CMPDI Mining Feasibility Report",
+          "block_type": "heading"
+        },
+        {
+          "block_index": 1,
+          "bbox": [],
+          "text": "This feasibility study evaluates opencast strip mining at Sector-B. The stripping ratio is estimated at 1:4.2 (Coal to Overburden).",
+          "block_type": "text"
+        }
+      ],
+      "tables": [
+        {
+          "table_index": 1,
+          "num_rows": 4,
+          "num_cols": 3,
+          "headers": [
+            "Parameter",
+            "Value",
+            "Unit"
+          ],
+          "rows": [
+            [
+              "Target Annual Production",
+              "5.0",
+              "MTPA"
+            ],
+            [
+              "Stripping Ratio",
+              "4.2",
+              "cu.m/tonne"
+            ],
+            [
+              "Life of Mine",
+              "25",
+              "Years"
+            ]
+          ],
+          "bbox": null
+        }
+      ],
+      "ocr_applied": false,
+      "ocr_confidence": null,
+      "ocr_error": null
+    }
+  ]
+}

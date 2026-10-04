@@ -1,0 +1,815 @@
+/* =========================================================
+   GeoMine Intelligence — Global Design System
+   Theme: Cozy Coffee / Warm Technical Editorial
+   ========================================================= */
+
+@import "lenis/dist/lenis.css";
+
+:root {
+  /* =======================================================
+     LIGHT THEME (DEFAULT)
+     ======================================================= */
+
+  /* Backgrounds — warm ivory & paper scale */
+  --bg-primary: #f5f1e8;
+  --bg-secondary: #eee7dc;
+  --bg-surface: #fbf8f1;
+  --bg-elevated: #fffdf8;
+  --bg-card: #fbf8f1;
+  --bg-card-hover: #f7f1e7;
+  --bg-input: #fffdf8;
+  --bg-inset: #e9e1d5;
+
+  /* Borders — visible, warm structural definition */
+  --border-subtle: rgba(59, 42, 33, 0.09);
+  --border-medium: rgba(59, 42, 33, 0.15);
+  --border-strong: rgba(59, 42, 33, 0.24);
+  --border-accent: #a96545;
+
+  /* Brand — rich coffee / walnut */
+  --color-brand: #6b4e3d;
+  --color-brand-light: #8b6a54;
+  --color-brand-dim: rgba(107, 78, 61, 0.09);
+  --color-brand-border: rgba(107, 78, 61, 0.22);
+
+  /* Semantic Colors */
+  --color-success: #5f765b;
+  --color-success-dim: rgba(95, 118, 91, 0.11);
+  --color-warning: #a96545;
+  --color-warning-dim: rgba(169, 101, 69, 0.11);
+  --color-error: #a65347;
+  --color-error-dim: rgba(166, 83, 71, 0.10);
+  --color-info: #57706d;
+  --color-info-dim: rgba(87, 112, 109, 0.11);
+
+  /* Geological Palette */
+  --stratum-teal: #57706d;
+  --stratum-teal-dim: rgba(87, 112, 109, 0.11);
+  --iron-oxide: #98624c;
+  --slate-blue: #6d7475;
+
+  /* Typography */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 0.875rem;
+  --font-size-base: 0.9375rem;
+  --font-size-lg: 1.0625rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.625rem;
+  --font-size-3xl: 2rem;
+
+  /* Text */
+  --text-primary: #30251f;
+  --text-secondary: #665950;
+  --text-muted: #8d8178;
+  --text-accent: #6b4e3d;
+  --text-inverse: #fbf8f1;
+
+  /* Spacing Rhythm — 4px/8px standard scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Radii — restrained architectural curvature */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Glass Surfaces — Translucent Frosted Paper */
+  --bg-glass: rgba(255, 253, 248, 0.78);
+  --bg-glass-header: rgba(238, 231, 220, 0.85);
+  --bg-glass-card: rgba(251, 248, 241, 0.88);
+  --bg-glass-hover: rgba(247, 241, 231, 0.92);
+  --border-glass: rgba(107, 78, 61, 0.12);
+  --glass-blur: blur(16px);
+
+  /* Shadows — Soft Layered Natural Hierarchy (Warm Umber) */
+  --shadow-xs: 0 1px 2px rgba(59, 42, 33, 0.04);
+  --shadow-sm: 0 2px 8px rgba(59, 42, 33, 0.06);
+  --shadow-md: 0 6px 18px rgba(59, 42, 33, 0.08);
+  --shadow-lg: 0 12px 32px rgba(59, 42, 33, 0.10);
+  --shadow-xl: 0 20px 48px rgba(59, 42, 33, 0.14);
+
+  /* Motion */
+  --transition-fast: 140ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-normal: 220ms cubic-bezier(0.2, 0, 0, 1);
+
+  /* Chart & Data Colors */
+  --chart-grid: rgba(59, 42, 33, 0.08);
+  --chart-axis: #8d8178;
+  --chart-tooltip-bg: #fffdf8;
+  --chart-tooltip-border: rgba(59, 42, 33, 0.18);
+  --chart-tooltip-text: #30251f;
+}
+
+/* =========================================================
+   DARK THEME — Espresso / Charcoal / Muted Copper / Sage
+   ========================================================= */
+
+[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-primary: #171311;
+  --bg-secondary: #211a17;
+  --bg-surface: #28201c;
+  --bg-elevated: #302720;
+  --bg-card: #28201c;
+  --bg-card-hover: #332924;
+  --bg-input: #211a17;
+  --bg-inset: #120f0d;
+
+  /* Borders */
+  --border-subtle: rgba(242, 237, 228, 0.08);
+  --border-medium: rgba(242, 237, 228, 0.14);
+  --border-strong: rgba(242, 237, 228, 0.22);
+  --border-accent: #c28a5b;
+
+  /* Brand */
+  --color-brand: #c28a5b;
+  --color-brand-light: #d7a878;
+  --color-brand-dim: rgba(194, 138, 91, 0.12);
+  --color-brand-border: rgba(194, 138, 91, 0.26);
+
+  /* Semantic Colors */
+  --color-success: #84957a;
+  --color-success-dim: rgba(132, 149, 122, 0.12);
+  --color-warning: #d78b5e;
+  --color-warning-dim: rgba(215, 139, 94, 0.12);
+  --color-error: #c46356;
+  --color-error-dim: rgba(196, 99, 86, 0.12);
+  --color-info: #78958f;
+  --color-info-dim: rgba(120, 149, 143, 0.12);
+
+  /* Geological Palette */
+  --stratum-teal: #78958f;
+  --stratum-teal-dim: rgba(120, 149, 143, 0.12);
+  --iron-oxide: #b87055;
+  --slate-blue: #889196;
+
+  /* Text */
+  --text-primary: #f2ede4;
+  --text-secondary: #c5b9ac;
+  --text-muted: #95877b;
+  --text-accent: #d7a878;
+  --text-inverse: #171311;
+
+  /* Glass Surfaces — Translucent Espresso Layer */
+  --bg-glass: rgba(40, 32, 28, 0.76);
+  --bg-glass-header: rgba(33, 26, 23, 0.85);
+  --bg-glass-card: rgba(40, 32, 28, 0.84);
+  --bg-glass-hover: rgba(51, 41, 36, 0.92);
+  --border-glass: rgba(242, 237, 228, 0.10);
+  --glass-blur: blur(16px);
+
+  /* Shadows — Soft Deep Contrast Hierarchy */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.28);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.42);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.50);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.60);
+
+  /* Chart & Data Colors */
+  --chart-grid: rgba(242, 237, 228, 0.08);
+  --chart-axis: #95877b;
+  --chart-tooltip-bg: #28201c;
+  --chart-tooltip-border: rgba(242, 237, 228, 0.16);
+  --chart-tooltip-text: #f2ede4;
+}
+
+/* =========================================================
+   RESET & FOUNDATION
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--bg-primary);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================================
+   SELECTION & SCROLLBAR
+   ========================================================= */
+
+::selection {
+  background: rgba(169, 101, 69, 0.22);
+  color: var(--text-primary);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+code,
+pre,
+kbd,
+.mono {
+  font-family: var(--font-mono);
+}
+
+code {
+  font-size: 0.88em;
+  padding: 1px 5px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+
+pre {
+  margin: 0;
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   FORMS
+   ========================================================= */
+
+input,
+textarea,
+select {
+  color: var(--text-primary);
+  background: var(--bg-input);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  font-size: var(--font-size-sm);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: var(--border-strong);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-dim);
+}
+
+/* =========================================================
+   SURFACES & CONTAINERS — 3-Level Elevation System
+   Level 1: Base Page (--bg-primary)
+   Level 2: Surface (--bg-surface, opaque, shadow-xs)
+   Level 3: Glass / Elevated (--bg-glass, blur, shadow-sm/md)
+   ========================================================= */
+
+.surface,
+.glass-panel,
+.card {
+  border-radius: var(--radius-lg);
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), background-color 240ms ease, border-color 240ms ease, box-shadow 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.surface {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-xs);
+}
+
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-sm);
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Floating Glass Recharts Tooltip */
+.recharts-default-tooltip {
+  background: var(--bg-glass) !important;
+  backdrop-filter: var(--glass-blur) !important;
+  -webkit-backdrop-filter: var(--glass-blur) !important;
+  border: 1px solid var(--border-glass) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-xs) !important;
+  padding: 8px 12px !important;
+}
+
+/* =========================================================
+   TEXT UTILITIES
+   ========================================================= */
+
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted     { color: var(--text-muted); }
+.text-accent    { color: var(--text-accent); }
+.text-brand     { color: var(--color-brand); }
+.text-amber     { color: var(--color-brand); }
+.text-cyan      { color: var(--stratum-teal); }
+.text-emerald   { color: var(--color-success); }
+.text-indigo    { color: var(--slate-blue); }
+.text-pink      { color: var(--iron-oxide); }
+.text-orange    { color: var(--color-warning); }
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   BADGES & PILLS — Restrained & Technical
+   ========================================================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 22px;
+  padding: 2px 7px;
+  background: var(--color-brand-dim);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.badge-success {
+  color: var(--color-success);
+  background: var(--color-success-dim);
+  border-color: rgba(95, 118, 91, 0.25);
+}
+
+.badge-warning {
+  color: var(--color-warning);
+  background: var(--color-warning-dim);
+  border-color: rgba(169, 101, 69, 0.25);
+}
+
+.badge-error {
+  color: var(--color-error);
+  background: var(--color-error-dim);
+  border-color: rgba(166, 83, 71, 0.25);
+}
+
+.badge-info,
+.badge-cyan {
+  color: var(--stratum-teal);
+  background: var(--stratum-teal-dim);
+  border-color: rgba(87, 112, 109, 0.25);
+}
+
+.badge-subtle {
+  background: var(--bg-inset);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+.badge-indigo {
+  color: var(--slate-blue);
+  background: var(--color-brand-dim);
+  border-color: var(--border-subtle);
+}
+
+/* =========================================================
+   STATUS INDICATORS & EYEBROWS
+   ========================================================= */
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.status-dot.online,
+.status-dot.success {
+  background: var(--color-success);
+  box-shadow: 0 0 6px var(--color-success);
+}
+
+.status-dot.offline,
+.status-dot.error {
+  background: var(--color-error);
+}
+
+.status-dot.warning {
+  background: var(--color-warning);
+}
+
+.status-dot.info {
+  background: var(--color-info);
+}
+
+.analytics-eyebrow,
+.eyebrow,
+.technical-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  margin-bottom: var(--space-2);
+}
+
+.eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+  flex-shrink: 0;
+}
+
+.eyebrow-dot.online {
+  background-color: var(--color-success);
+  box-shadow: 0 0 5px var(--color-success);
+}
+
+/* =========================================================
+   TABLES — Professional Geological & Relational Data Tables
+   ========================================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-medium);
+  background: var(--bg-secondary);
+}
+
+td {
+  color: var(--text-secondary);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: var(--font-size-md);
+  vertical-align: middle;
+}
+
+tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+tbody tr:hover {
+  background: var(--color-brand-dim);
+}
+
+/* =========================================================
+   KEYFRAME ANIMATIONS
+   ========================================================= */
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes indeterminate-progress {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+.spinning,
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+/* =========================================================
+   BUTTON SYSTEM — Intentional, Restrained & Cohesive
+   ========================================================= */
+
+.btn,
+.action-button,
+.browse-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all var(--transition-fast);
+}
+
+/* Primary Button: rich coffee background, cream text */
+.btn-primary,
+.button-primary,
+.browse-btn {
+  background: var(--color-brand);
+  color: var(--text-inverse);
+  border: 1px solid var(--color-brand);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover:not(:disabled),
+.button-primary:hover:not(:disabled),
+.browse-btn:hover:not(:disabled) {
+  background: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+  color: var(--text-inverse);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active:not(:disabled),
+.button-primary:active:not(:disabled),
+.browse-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Secondary Button: surface / transparent, subtle border, coffee text */
+.btn-secondary,
+.button-secondary {
+  background: var(--bg-surface);
+  color: var(--color-brand);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover:not(:disabled),
+.button-secondary:hover:not(:disabled) {
+  background: var(--bg-card-hover);
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  transform: translateY(-1px);
+}
+
+/* Ghost Button: no visible background, muted text */
+.btn-ghost,
+.button-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+}
+
+.btn-ghost:hover:not(:disabled),
+.button-ghost:hover:not(:disabled) {
+  background: var(--color-brand-dim);
+  color: var(--text-primary);
+}
+
+/* Compact Button */
+.btn-sm,
+.button-sm {
+  height: 32px;
+  padding: 0 12px;
+  font-size: var(--font-size-xs);
+  gap: 6px;
+}
+
+/* Major Action Button */
+.btn-lg,
+.button-lg {
+  height: 44px;
+  padding: 0 20px;
+  font-size: var(--font-size-md);
+}
+
+/* Button Link */
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: var(--color-brand);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.btn-link:hover {
+  background: var(--color-brand-dim);
+  color: var(--color-brand-light);
+}
+
+/* =========================================================
+   MICRO-INTERACTIONS
+   ========================================================= */
+
+button,
+.nav-button,
+.tab-btn,
+.action-button,
+.btn {
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+button:hover:not(:disabled),
+.action-button:hover:not(:disabled),
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  :root {
+    --font-size-base: 0.875rem;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --font-size-base: 0.875rem;
+    --font-size-xl: 1.125rem;
+    --font-size-2xl: 1.375rem;
+  }
+}

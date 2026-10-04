@@ -1,0 +1,37 @@
+# ==============================================================================
+# Mining Document Intelligence Platform - Backend Dependencies
+# SIH 2026 Problem Statement 26023 (CMPDI / Coal India Limited)
+# ==============================================================================
+
+# Core Web Framework & Server (Phase 1)
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.9
+httpx>=0.27.0
+
+# Document Ingestion & Extraction (Phase 2)
+pymupdf>=1.24.0
+# pytesseract>=0.3.10
+# pdf2image>=1.17.0
+python-docx>=1.1.0
+openpyxl>=3.1.2
+
+# Vector Search & Knowledge Base (Phase 3)
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# LLM & AI Processing (Phase 3 & 4)
+google-genai>=0.1.0
+# langchain-text-splitters>=0.0.1
+
+# Database & Storage (Phase 4)
+# sqlalchemy>=2.0.28
+# psycopg2-binary>=2.9.9
+# supabase>=2.4.0
+
+# Reporting & Export (Phase 5)
+reportlab>=4.1.0
+# jinja2>=3.1.3
+# pandas>=2.2.0
